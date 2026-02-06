@@ -1,6 +1,8 @@
 // AI Governance Infrastructure Website
 // Single-page application with routing
 
+console.log('App.js loaded successfully');
+
 class App {
     constructor() {
         this.currentPage = 'home';
@@ -1162,5 +1164,7 @@ class App {
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', () => {
-    new App();
+    console.log('DOM loaded, initializing App...');
+    const app = new App();
+    console.log('App initialized successfully');
 });
